@@ -1,8 +1,7 @@
 from random import *
-def randomenglishsound(english):
+def randomenglishsound(english,num):
     
-    b = randint(0,65)
-    e = english[b]
+    e = english[num]
     
     return e
     
@@ -11,7 +10,7 @@ def randomhirogana(hiro):
     a = randint(0,65)
     h = hiro[a]
     
-    return h
+    return h,a
     
 def main():
     hirogana = ["あ","い","う","え","お","か","き","く",
@@ -34,7 +33,7 @@ def main():
     print("Type done if your done.")
     while(userinput != "done"):
         hirocharacter=randomhirogana(hirogana)
-        englishs=randomenglishsound(englishsound)
+        englishs=randomenglishsound(englishsound,randomnum)
         print("What is this sound?", hirocharacter)
         userinput = input()
         while(userinput != englishs and trys < 2):
