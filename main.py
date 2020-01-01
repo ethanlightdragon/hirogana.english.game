@@ -28,7 +28,6 @@ def main():
     "ni","nu","ne","no","ha","hi","fu","he","ho","ba","bi","bu","be","bo",
     "pa","pi","pu","pe","po","ma","mi","mu","me","mo","ya","yu",
     "yo","ra","ri","ru","re","ro","wa","wo","n/m"]
-    trys = 0
     userinput = "notdone"
     print("Type done if your done.")
     while(userinput != "done"):
@@ -36,6 +35,7 @@ def main():
         englishs=randomenglishsound(englishsound,randomnum)
         print("What is this sound?", hirocharacter)
         userinput = input()
+        trys = 0
         while(userinput != englishs and trys < 2):
             trys += 1
             print("wrong")
