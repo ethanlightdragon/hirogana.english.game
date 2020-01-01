@@ -32,7 +32,7 @@ def main():
     userinput = "notdone"
     print("Type done if your done.")
     while(userinput != "done"):
-        hirocharacter=randomhirogana(hirogana)
+        hirocharacter,randomnum=randomhirogana(hirogana)
         englishs=randomenglishsound(englishsound,randomnum)
         print("What is this sound?", hirocharacter)
         userinput = input()
@@ -45,5 +45,6 @@ def main():
                 pass
         while(userinput == englishs):
             print("Correct")
+            break
             pass
 main()
